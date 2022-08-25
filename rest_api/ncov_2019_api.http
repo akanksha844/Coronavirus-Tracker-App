@@ -1,0 +1,31 @@
+ @baseUrl=  https://ncov2019-admin.firebaseapp.com
+
+ @authorization= c53fa924cef319a64a3e4d4ce42fe33540bc765cc3c94fccb22cfac790f3da7a
+
+ @accessToken= bbd1ba0028bf4f78181d292339c4571ebd9bd6fbf62ec9d3289444b32bae205c
+
+
+
+POST {{baseUrl}}/token 
+Authorization: Basic {{authorization}} 
+
+###
+
+GET {{baseUrl}}/cases
+Accep: applicaiton/json
+Authorization: Bearer {{ accessToken}}
+###
+
+GET {{baseUrl}}/casesConfirmed
+Accep: applicaiton/json
+Authorization: Bearer {{ accessToken}}
+###
+
+GET {{baseUrl}}/deaths
+Accep: applicaiton/json
+Authorization: Bearer {{ accessToken}}
+###
+
+GET {{baseUrl}}/recovered
+Accep: applicaiton/json
+Authorization: Bearer {{ accessToken}}
