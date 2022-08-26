@@ -4,6 +4,7 @@ Realtime flutter app to check  Cases, Suspected Cases, Confirmed Cases, Deaths a
 
 Flutter App which is a single page widget has following features: 
 
+       
        ( Outside world Layer )
 1.  Talk to web server to make requests from nCov_2019_REST_API     
 2.  Will not use REST client as it's flutter app , Dart_http_package will make HTTP requests directly in Dart and process incoming       responses so that extracted data can be shown on screen
@@ -12,7 +13,9 @@ Flutter App which is a single page widget has following features:
 3. Api_Service class gives Domain specific Api which will be use further in app.
 
      APIService class (which contains token and endpoint data)  will be  :
+     
     a)  pure (holds no state)
+    
     b) but we need state to hold the access_token in order to call remaining endpoint
 
       ( Presentation and Logic Layer ) 
